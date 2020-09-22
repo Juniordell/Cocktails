@@ -1,15 +1,14 @@
 import React from 'react'
 import Lottie from 'react-lottie'
-import Header from '../../components/Header'
 
-import { Container, AboutContent, Anime, FirstContent } from './styles'
-import CocktailAnimation from '../../assets/cocktailAnimation.json'
+import { Container, Anime, Title } from './styles'
+import drink from '../../assets/drink.json'
 
 function Main() {
   const defaultOptions = {
     loop: true,
     autoplay: true,
-    animationData: CocktailAnimation,
+    animationData: drink,
     rendererSettings: {
       preserveAspectRatio: 'xMidYMid slice',
     },
@@ -17,24 +16,15 @@ function Main() {
 
   return (
     <Container>
-      <Header variant='white'>
-        <FirstContent>
-          <AboutContent>
-            <h1>
-              Encontre os melhores coqueteis para impressionar qualquer um!
-            </h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vero
-              fuga sint minima, recusandae tempore illum nemo error perspiciatis
-              consequuntur ex fugiat pariatur consectetur accusantium ipsum
-              doloremque hic quia! Corrupti, odit?
-            </p>
-          </AboutContent>
-          <Anime>
-            <Lottie height={275} width={400} options={defaultOptions} />
-          </Anime>
-        </FirstContent>
-      </Header>
+      <Title>Cocktails</Title>
+      <Anime>
+        <Lottie
+          style={{ fill: 'darkcyan', marginRight: '30px' }}
+          height={275}
+          width={400}
+          options={defaultOptions}
+        />
+      </Anime>
     </Container>
   )
 }

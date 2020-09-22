@@ -1,16 +1,17 @@
 import React from 'react'
-import ParallaxBg from '../../components/ParallaxBg'
 import Main from '../../components/Main'
-import { Title } from './styles'
+import Header from '../../components/Header'
+import Show from '../../components/Show'
+
+import { Container } from './styles'
 
 function App() {
   return (
-    <div className='App'>
-      <Title>Cocktails</Title>
-      <ParallaxBg />
+    <Container className='App'>
+      <Header />
       <Main />
-      <div style={{ height: '100vh' }}></div>
-    </div>
+      <Show />
+    </Container>
   )
 }
 
