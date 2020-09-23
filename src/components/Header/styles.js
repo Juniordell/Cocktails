@@ -13,6 +13,7 @@ export const Button = styled(Link)`
   color: white;
   outline: none;
   padding: 20px;
+  text-decoration: none;
   cursor: pointer;
   border: none;
   font-size: 18px;
