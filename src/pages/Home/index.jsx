@@ -1,16 +1,16 @@
 import React from 'react'
-import ParallaxBg from '../../components/ParallaxBg'
-import Main from '../../components/Main'
-import { Title } from './styles'
+import Choice from '../../components/Choice'
+import NightDrink from '../../assets/images/night_drink.jpg'
+import TropicalDrink from '../../assets/images/tropical_drink.jpg'
+
+import { Container } from './styles'
 
 function App() {
   return (
-    <div className='App'>
-      <Title>Cocktails</Title>
-      <ParallaxBg />
-      <Main />
-      <div style={{ height: '100vh' }}></div>
-    </div>
+    <Container className='App'>
+      <Choice img={TropicalDrink} choice='tropical' />
+      <Choice img={NightDrink} choice='night' />
+    </Container>
   )
 }
 

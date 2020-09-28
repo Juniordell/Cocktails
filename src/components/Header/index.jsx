@@ -1,18 +1,13 @@
 import React from 'react'
 
-import { Container, HeaderWrapper, Header as Head, Button } from './styles'
+import { Container, Button } from './styles'
 
-function Header({ variant, style, children }) {
+function Header() {
   return (
-    <Container className={variant} style={style}>
-      <HeaderWrapper>
-        <Head>
-          <button>Recipes</button>
-          <Button>Receitas</Button>
-        </Head>
-      </HeaderWrapper>
-
-      {children}
+    <Container>
+      <Button>Recipes</Button>
+      <Button>Recipes</Button>
+      <Button>Recipes</Button>
     </Container>
   )
 }
