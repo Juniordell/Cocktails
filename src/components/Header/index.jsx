@@ -2,10 +2,10 @@ import React from 'react'
 
 import { Container, Button } from './styles'
 
-function Header({ variant, style, children }) {
+function Header() {
   return (
-    <Container className={variant} style={style}>
-      <Button to='/recipes'>Recipes</Button>
+    <Container>
+      <Button>Recipes</Button>
       <Button>Recipes</Button>
       <Button>Recipes</Button>
     </Container>
