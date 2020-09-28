@@ -7,9 +7,8 @@ function Header({ variant, style, children }) {
     <Container className={variant} style={style}>
       <HeaderWrapper>
         <Head>
-          <Button>Recipes</Button>
-          <Button>Ingredients</Button>
-          <Button>Recipient</Button>
+          <button>Recipes</button>
+          <Button>Receitas</Button>
         </Head>
       </HeaderWrapper>
 
