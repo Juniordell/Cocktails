@@ -1,11 +1,17 @@
 import React from 'react'
 
-import { Container } from './styles'
+import { Container, ImgContent, Image, Content, Text } from './styles'
 
-function Choice({ img }) {
+function Choice({ img, choice }) {
   return (
     <Container>
-      <img src={img} alt='img' />
+      <ImgContent to={choice === 'night' ? '/night' : '/tropical'}>
+        <Image src={img} alt='img' />
+      </ImgContent>
+
+      <Content>
+        <Text>{choice === 'night' ? 'Night Drinks' : 'Tropical Drinks'}</Text>
+      </Content>
     </Container>
   )
 }
