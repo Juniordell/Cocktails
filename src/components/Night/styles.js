@@ -2,7 +2,6 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   width: 100%;
-  /* height: 80vh; */
 `
 
 export const Content = styled.div`
@@ -34,24 +33,32 @@ export const Content = styled.div`
   }
 
   > button {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen,
-      Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background: transparent;
     outline: none;
-    font-weight: 600;
     margin: 50px 0 0 180px;
     padding: 30px 40px;
-    text-decoration: none;
     cursor: pointer;
-    font-size: 18px;
     transition: 0.3s;
     border: 1px solid #ff8630;
     background: #ff8630;
-    color: #1b1b1b;
+
+    > :first-child {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI';
+      color: #1b1b1b;
+      text-decoration: none;
+      transition: 0.3s;
+      font-size: 18px;
+      font-weight: 600;
+      width: 100%;
+      height: 100%;
+    }
 
     &:hover {
       background: transparent;
-      color: white;
+
+      > :first-child {
+        color: white;
+      }
     }
   }
 `
